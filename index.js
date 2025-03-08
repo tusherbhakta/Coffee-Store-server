@@ -87,7 +87,7 @@ async function run() {
 
 
     // user related api 
-    app.post('newuser', async(req, res) => {
+    app.post('/newuser', async(req, res) => {
         const newUser = req.body;
         console.log(newUser);
         const result = await userCollection.insertOne(newUser);
